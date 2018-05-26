@@ -23,11 +23,13 @@ public class NetworkBindingConfiguration {
     public Boolean allowDHCPlisten = true;
     public BigDecimal cacheDeviceStateTimeInMS = BigDecimal.valueOf(2000);
     public String arpPingToolPath = "arping";
+    public String nmapPath = "nmap";
 
     public void update(@NonNull NetworkBindingConfiguration newConfiguration) {
         this.allowSystemPings = newConfiguration.allowSystemPings;
         this.allowDHCPlisten = newConfiguration.allowDHCPlisten;
         this.cacheDeviceStateTimeInMS = newConfiguration.cacheDeviceStateTimeInMS;
         this.arpPingToolPath = newConfiguration.arpPingToolPath;
+        this.nmapPath = newConfiguration.nmapPath;
     }
 }
